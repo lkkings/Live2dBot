@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES6",  // 或者您正在使用的其他目标版本
+    "module": "commonjs",  // 或者您正在使用的其他模块格式
+    "strict": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "public/js",
+    "removeComments": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "@framework/*": ["Framework/src/*"]
+    },
+    "noImplicitAny": true,
+    "useUnknownInCatchVariables": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "Core/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "public/js"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "Nahida.moc3",
+		"Textures": [
+			"Nahida.8192/texture_00.png"
+		],
+		"Physics": "Nahida.physics3.json",
+		"DisplayInfo": "Nahida.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "好0",
+				"File": "guang.exp3.json"
+			},
+			{
+				"Name": "恶",
+				"File": "hei.exp3.json"
+			},
+			{
+				"Name": "lei.exp3.json",
+				"File": "lei.exp3.json"
+			},
+			{
+				"Name": "乐",
+				"File": "lh.exp3.json"
+			},
+			{
+				"Name": "怒",
+				"File": "sq.exp3.json"
+			},
+			{
+				"Name": "惊",
+				"File": "xx.exp3.json"
+			},
+			{
+				"Name": "唱",
+				"File": "yz.exp3.json"
+			},
+			{
+				"Name": "好1",
+				"File": "zs1.exp3.json"
+			},
+			{
+				"Name": "好2",
+				"File": "zs2.exp3.json"
+			},
+			{
+				"Name": "好3",
+				"File": "zs3.exp3.json"
+			}
+		],
+		"Motions": {
+			"Idle": [
+				{
+					"File": "StandbyAnimation.motion3.json"
+			
+				}
+			],
+			"Speak":[
+				
+			],
+			"Sing":[
+				
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}
