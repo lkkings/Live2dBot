@@ -13,7 +13,6 @@ import * as LAppDefine from './lappdefine';
 import { canvas } from './lappdelegate';
 import { LAppModel } from './lappmodel';
 import { LAppPal } from './lapppal';
-import { LAppWavFileHandler } from './lappwavfilehandler';
 
 export let s_instance: LAppLive2DManager = null;
 
