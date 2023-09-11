@@ -135,8 +135,6 @@ export class LAppView {
       initBackGroundTexture
     );
 
-    // 歯車画像初期化
-    imageName = LAppDefine.GearImageName;
     const initGearTexture = (textureInfo: TextureInfo): void => {
       const x = width - textureInfo.width * 0.5;
       const y = height - textureInfo.height * 0.5;

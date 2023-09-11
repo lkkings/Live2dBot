@@ -12,7 +12,7 @@ import { canvas, gl } from './lappdelegate';
  *
  * テクスチャＩＤ、Rectの管理
  */
-export class LAppSprite {
+export class LAppSprite { 
   /**
    * コンストラクタ
    * @param x            x座標

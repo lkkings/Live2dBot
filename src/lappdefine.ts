@@ -5,23 +5,23 @@
  * that can be found at https://www.live2d.com/eula/live2d-open-software-license-agreement_en.html.
  */
 
-import { LogLevel } from '@framework/live2dcubismframework';
+import { LogLevel }  from '@framework/live2dcubismframework';
 
 /**
  *  App中使用的常数
  */
 
 // Canvas width and height pixel values, or dynamic screen size ('auto').
-export const CanvasSize: { width: number; height: number } | 'auto' = 'auto';
+export const CanvasSize: { width:   number; height: number } | 'auto' = 'auto';
 
 // 画面
-export const ViewScale = 1.0;
-export const ViewMaxScale = 2.0;
-export const ViewMinScale = 0.8;
+export const ViewScale = 1.0; 
+export const ViewMaxScale = 2.0; 
+export const ViewMinScale = 0.8;  
 
 export const ViewLogicalLeft = -1.0;
 export const ViewLogicalRight = 1.0;
-export const ViewLogicalBottom = -1.0;
+export const ViewLogicalBottom = -1.0; 
 export const ViewLogicalTop = 1.0;
 
 export const ViewLogicalMaxLeft = -2.0;
@@ -33,10 +33,7 @@ export const ViewLogicalMaxTop = 2.0;
 export const ResourcesPath = '../../Resources/';
 
 // 模型后面的背景图像文件
-export const BackImageName = 'back_class_normal.png';
-
-// 齿轮
-export const GearImageName = 'icon_gear.png';
+export const BackImageName = 'dream_TradingCard.jpg';
 
 // 終了ボタン
 export const PowerImageName = 'CloseNormal.png';

@@ -64,7 +64,7 @@ export class LAppDelegate {
    */
   public initialize(): boolean {
     // 创建画布
-    canvas = document.createElement('canvas');
+    canvas = document.getElementById('canvas') as HTMLCanvasElement;
     if (LAppDefine.CanvasSize === 'auto') {
       this._resizeCanvas();
     } else {
@@ -274,7 +274,8 @@ export class LAppDelegate {
   }
 
   private initWebSocket(): void {
-    const WebSocketUrl = window.prompt('请输入后端服务器socket地址：', 'ws://127.0.0.1:8000/bot');
+    const host = window.prompt('请输入后端服务器地址：', '127.0.0.1:8000');
+    const WebSocketUrl = `ws://${host}/bot`;
     const audioQueue: string[] = [];
     //原声音频队列
     const vocalsQueue: string[] = [];
@@ -300,6 +301,9 @@ export class LAppDelegate {
           setTimeout(() => {
             isplay = false;
           }, 500);
+          if (musicQueue.length == 0) {
+            this.sendGetRequest(`http://${host}/ok`)
+          }
         });
       }
     }, 100);
@@ -317,6 +321,7 @@ export class LAppDelegate {
           isplay = false;
           if (musicQueue.length == 0) {
             LAppLive2DManager.getInstance().expression(this._expression);
+            this.sendGetRequest(`http://${host}/ok`)
           }
         });
       }
